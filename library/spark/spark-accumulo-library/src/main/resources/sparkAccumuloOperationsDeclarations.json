@@ -65,6 +65,12 @@
       "handler": {
         "class": "uk.gov.gchq.gaffer.sparkaccumulo.operation.handler.graphframe.GraphFrameAsIterableHandler"
       }
+    },
+    {
+      "operation": "uk.gov.gchq.gaffer.spark.operation.graphframe.PageRank",
+      "handler": {
+        "class": "uk.gov.gchq.gaffer.sparkaccumulo.operation.handler.graphframe.PageRankHandler"
+      }
     }
   ]
 }
