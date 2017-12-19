@@ -59,7 +59,7 @@ public class AddNamedOperationTest extends OperationTest<AddNamedOperation> {
 
         // Then
         JsonAssert.assertEquals(String.format("{%n" +
-                "  \"class\" : \"uk.gov.gchq.gaffer.named.operation.AddNamedOperation\",%n" +
+                "  \"class\" : \"AddNamedOperation\",%n" +
                 "  \"operationName\": \"Test\",%n" +
                 "  \"description\": \"Test Named Operation\",%n" +
                 "  \"readAccessRoles\": [\"User\"],%n" +
@@ -67,7 +67,7 @@ public class AddNamedOperationTest extends OperationTest<AddNamedOperation> {
                 "  \"score\": 0,%n" +
                 "  \"overwriteFlag\": true,%n" +
                 "  \"operationChain\": {" +
-                "  \"operations\": [{\"class\": \"uk.gov.gchq.gaffer.operation.impl.get.GetAdjacentIds\", \"input\": [{\"vertex\": \"seed\", \"class\": \"uk.gov.gchq.gaffer.operation.data.EntitySeed\"}]}]}" +
+                "  \"operations\": [{\"class\": \"GetAdjacentIds\", \"input\": [{\"vertex\": \"seed\", \"class\": \"uk.gov.gchq.gaffer.operation.data.EntitySeed\"}]}]}" +
                 "}"), json);
     }
 

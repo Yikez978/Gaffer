@@ -55,7 +55,7 @@ public class AddElementsFromFileTest extends OperationTest<AddElementsFromFile> 
 
         // Then
         JsonAssert.assertEquals(String.format("{%n" +
-                        "  \"class\" : \"uk.gov.gchq.gaffer.operation.impl.add.AddElementsFromFile\",%n" +
+                        "  \"class\" : \"AddElementsFromFile\",%n" +
                         "  \"filename\" : \"filename\",%n" +
                         "  \"parallelism\" : 2,%n" +
                         "  \"elementGenerator\" : \"uk.gov.gchq.gaffer.generator.TestGeneratorImpl\",%n" +

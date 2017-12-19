@@ -60,7 +60,7 @@ public class AddElementsFromKafkaTest extends OperationTest<AddElementsFromKafka
 
         // Then
         JsonAssert.assertEquals(String.format("{%n" +
-                        "  \"class\" : \"uk.gov.gchq.gaffer.operation.impl.add.AddElementsFromKafka\",%n" +
+                        "  \"class\" : \"AddElementsFromKafka\",%n" +
                         "  \"topic\" : \"topic\",%n" +
                         "  \"groupId\" : \"groupId\",%n" +
                         "  \"bootstrapServers\" : [ \"server1\", \"server2\" ],%n" +

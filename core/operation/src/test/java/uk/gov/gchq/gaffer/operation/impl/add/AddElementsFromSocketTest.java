@@ -59,7 +59,7 @@ public class AddElementsFromSocketTest extends OperationTest<AddElementsFromSock
 
         // Then
         JsonAssert.assertEquals(String.format("{%n" +
-                        "  \"class\" : \"uk.gov.gchq.gaffer.operation.impl.add.AddElementsFromSocket\",%n" +
+                        "  \"class\" : \"AddElementsFromSocket\",%n" +
                         "  \"hostname\" : \"hostname\",%n" +
                         "  \"port\" : 6874,%n" +
                         "  \"elementGenerator\" : \"uk.gov.gchq.gaffer.generator.TestGeneratorImpl\",%n" +

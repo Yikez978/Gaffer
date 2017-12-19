@@ -18,6 +18,7 @@ package uk.gov.gchq.gaffer.operation;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.fasterxml.jackson.databind.annotation.JsonTypeIdResolver;
 import org.apache.commons.lang3.exception.CloneFailedException;
 
 import uk.gov.gchq.gaffer.commonutil.Required;
@@ -78,13 +79,13 @@ import java.util.Map;
  * }
  * </pre>
  */
-@JsonTypeInfo(use = JsonTypeInfo.Id.CLASS, include = JsonTypeInfo.As.PROPERTY, property = "class")
+@JsonTypeInfo(use = JsonTypeInfo.Id.CUSTOM, include = JsonTypeInfo.As.PROPERTY, property = "class")
+@JsonTypeIdResolver(OperationIdResolver.class)
 public interface Operation extends Closeable {
     /**
      * Operation implementations should ensure a ShallowClone method is implemented.
      * Performs a shallow clone. Creates a new instance and copies the fields across.
      * It does not clone the fields.
-     *
      * If the operation contains nested operations, these must also be cloned.
      *
      * @return shallow clone

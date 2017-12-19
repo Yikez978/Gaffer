@@ -94,7 +94,7 @@ public class FederatedOperationChainTest extends OperationTest<FederatedOperatio
                 "  \"class\" : \"uk.gov.gchq.gaffer.federatedstore.operation.FederatedOperationChain\",%n" +
                 "  \"operationChain\" : {%n" +
                 "    \"operations\" : [ {%n" +
-                "      \"class\" : \"uk.gov.gchq.gaffer.operation.impl.get.GetAllElements\"%n" +
+                "      \"class\" : \"GetAllElements\"%n" +
                 "    } ]%n" +
                 "  },%n" +
                 "  \"options\" : {%n" +
@@ -133,7 +133,7 @@ public class FederatedOperationChainTest extends OperationTest<FederatedOperatio
                 "  \"operationChain\" : {%n" +
                 "    \"class\" : \"uk.gov.gchq.gaffer.operation.OperationChainInvalidClassName\",%n" +
                 "    \"operations\" : [ {%n" +
-                "      \"class\" : \"uk.gov.gchq.gaffer.operation.impl.get.GetAllElements\"%n" +
+                "      \"class\" : \"GetAllElements\"%n" +
                 "    } ]%n" +
                 "  },%n" +
                 "  \"options\" : {%n" +
@@ -156,9 +156,9 @@ public class FederatedOperationChainTest extends OperationTest<FederatedOperatio
         final String json = String.format("{%n" +
                 "  \"class\" : \"uk.gov.gchq.gaffer.federatedstore.operation.FederatedOperationChain\",%n" +
                 "  \"operationChain\" : {%n" +
-                "    \"class\" : \"uk.gov.gchq.gaffer.operation.OperationChain\",%n" +
+                "    \"class\" : \"OperationChain\",%n" +
                 "    \"operations\" : [ {%n" +
-                "      \"class\" : \"uk.gov.gchq.gaffer.operation.impl.get.GetAllElements\"%n" +
+                "      \"class\" : \"GetAllElements\"%n" +
                 "    } ]%n" +
                 "  },%n" +
                 "  \"options\" : {%n" +
@@ -182,7 +182,7 @@ public class FederatedOperationChainTest extends OperationTest<FederatedOperatio
                 "  \"class\" : \"uk.gov.gchq.gaffer.federatedstore.operation.FederatedOperationChain\",%n" +
                 "  \"operationChain\" : {%n" +
                 "    \"operations\" : [ {%n" +
-                "      \"class\" : \"uk.gov.gchq.gaffer.operation.impl.get.GetAllElements\"%n" +
+                "      \"class\" : \"GetAllElements\"%n" +
                 "    } ]%n" +
                 "  },%n" +
                 "  \"options\" : {%n" +

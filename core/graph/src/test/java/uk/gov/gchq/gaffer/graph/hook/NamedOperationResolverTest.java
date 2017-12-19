@@ -192,7 +192,7 @@ public class NamedOperationResolverTest {
         final NamedOperationDetail extendedNamedOperation = new NamedOperationDetail.Builder()
                 .operationName(opName)
                 .description("standard operation")
-                .operationChain("{ \"operations\": [ { \"class\":\"uk.gov.gchq.gaffer.operation.impl.get.GetAllElements\" }, { \"class\":\"uk.gov.gchq.gaffer.operation.impl.Limit\", \"resultLimit\": \"${param1}\" } ] }")
+                .operationChain("{ \"operations\": [ { \"class\":\"GetAllElements\" }, { \"class\":\"Limit\", \"resultLimit\": \"${param1}\" } ] }")
                 .parameters(paramDetailMap)
                 .build();
 
@@ -241,7 +241,7 @@ public class NamedOperationResolverTest {
         final NamedOperationDetail extendedNamedOperation = new NamedOperationDetail.Builder()
                 .operationName(opName)
                 .description("standard operation")
-                .operationChain("{ \"operations\": [ { \"class\":\"uk.gov.gchq.gaffer.operation.impl.get.GetAllElements\" }, { \"class\":\"uk.gov.gchq.gaffer.operation.impl.Limit\", \"resultLimit\": \"${param1}\" } ] }")
+                .operationChain("{ \"operations\": [ { \"class\":\"GetAllElements\" }, { \"class\":\"Limit\", \"resultLimit\": \"${param1}\" } ] }")
                 .parameters(paramDetailMap)
                 .build();
 
@@ -282,7 +282,7 @@ public class NamedOperationResolverTest {
         final NamedOperationDetail extendedNamedOperation = new NamedOperationDetail.Builder()
                 .operationName(opName)
                 .description("standard operation")
-                .operationChain("{ \"operations\": [ { \"class\":\"uk.gov.gchq.gaffer.operation.impl.get.GetAllElements\" }, { \"class\":\"uk.gov.gchq.gaffer.operation.impl.Limit\", \"resultLimit\": \"${param1}\" } ] }")
+                .operationChain("{ \"operations\": [ { \"class\":\"GetAllElements\" }, { \"class\":\"Limit\", \"resultLimit\": \"${param1}\" } ] }")
                 .parameters(paramDetailMap)
                 .build();
 
@@ -322,7 +322,7 @@ public class NamedOperationResolverTest {
         final NamedOperationDetail extendedNamedOperation = new NamedOperationDetail.Builder()
                 .operationName(opName)
                 .description("standard operation")
-                .operationChain("{ \"operations\": [ { \"class\":\"uk.gov.gchq.gaffer.operation.impl.get.GetAllElements\" }, { \"class\":\"uk.gov.gchq.gaffer.operation.impl.Limit\", \"resultLimit\": \"${param1}\" } ] }")
+                .operationChain("{ \"operations\": [ { \"class\":\"GetAllElements\" }, { \"class\":\"Limit\", \"resultLimit\": \"${param1}\" } ] }")
                 .parameters(paramDetailMap)
                 .build();
 
